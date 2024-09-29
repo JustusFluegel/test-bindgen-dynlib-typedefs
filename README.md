@@ -44,8 +44,8 @@ impl TestLib {
     }
 }
 fn main() {
-    {
-        ::std::io::_print(format_args!("Hello, world!\n"));
-    };
+    let lib = unsafe { TestLib::new("./foo.dll") }.unwrap();
+    let _ = unsafe { lib.SSV_InitLIB2(c"foo".as_ptr()) };
+    ::core::panicking::panic("not yet implemented");
 }
 ```
