@@ -1,0 +1,3 @@
+[submodule "rust-bindgen"]
+	path = rust-bindgen
+	url = git@github.com:JustusFluegel/rust-bindgen.git
